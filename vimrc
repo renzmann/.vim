@@ -100,7 +100,8 @@ end
 let g:nord_italic=1
 let g:nord_bold=1
 let g:nord_italic_comments=1
-colorscheme nord
+" looks good everywhere!
+colorscheme apprentice
 " }}}
 
 " Common abbreviations {{{
