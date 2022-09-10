@@ -5,17 +5,17 @@ Want to use this config? Go ahead!
 
 On Linux/macOS
 ```sh
-git clone https://github.com/renzmann/dotvim ~/.vim
+git clone https://github.com/renzmann/.vim ~/.vim
 ```
 
 On Windows (Powershell)
 ```powershell
-git clone https://github.com/renzmann/dotvim $Env:USERPROFILE\vimfiles
+git clone https://github.com/renzmann/.vim $Env:USERPROFILE\vimfiles
 ```
 
 On Windows (CMD)
 ```
-git clone https://github.com/renzmann/dotvim %USERPROFILE%\vimfiles
+git clone https://github.com/renzmann/.vim %USERPROFILE%\vimfiles
 ```
 
 ## It's portable!
@@ -23,7 +23,7 @@ It's also possible to try out this configuration without explicitly setting it
 as your default
 
 ```sh
-git clone https://github.com/renzmann/dotvim renzmann-dotvim
+git clone https://github.com/renzmann/.vim renzmann-dotvim
 vim -u renzmann-dotvim/vimrc
 ```
 
