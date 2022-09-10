@@ -7,7 +7,7 @@
 "
 " Thanks to: https://stackoverflow.com/a/3384476/13215205
 "
-" $ git clone --recursive git@github.com:renzmann/renzmann
+" $ git clone git@github.com:renzmann/renzmann
 " $ vim -u renzmann/.vim/vimrc
 "
 " Use `za` to fold/unfold any of the sections below
@@ -21,6 +21,8 @@ if has('nvim')
 endif
 if exists('packpath')
   let &packpath = &runtimepath
+else
+  execute pathogen#infect()
 endif
 
 " If the current project defines a project-level .vimrc, source it here
