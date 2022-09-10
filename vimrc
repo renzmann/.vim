@@ -19,7 +19,9 @@ let &runtimepath = printf('%s,%s,%s/after', $MYVIMHOME, &runtimepath, $MYVIMHOME
 if has('nvim')
   let &runtimepath = printf('%s,%s,%s/after,%s/site', stdpath('config'), &runtimepath, stdpath('config'), stdpath('data'))
 endif
-let &packpath = &runtimepath
+if exists('packpath')
+  let &packpath = &runtimepath
+endif
 
 " If the current project defines a project-level .vimrc, source it here
 if filereadable("project.vim") && !exists("g:loaded_renzmann_project")
